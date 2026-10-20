@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>СеверДом — тёплый каркасный дом под ключ за 90 дней в Подмосковье</title>
+<meta name="description" content="Каркасные дома под ключ в Подмосковье. Фиксированная цена в договоре, срок 90 дней, гарантия на каркас 15 лет. 240 домов за 9 лет. Расчёт стоимости онлайн.">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232F4A3C'/><text x='50' y='68' font-size='56' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>С</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="СеверДом — тёплый каркасный дом под ключ за 90 дней">
+<meta property="og:description" content="Фиксированная цена в договоре, срок 90 дней, гарантия 15 лет на каркас. 240 домов в Подмосковье.">
+<meta property="og:image" content="hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FAF7F2;
+    --bg-soft: #F3EDE4;
+    --card: #FFFFFF;
+    --ink: #2B2B2E;
+    --ink-soft: #5A5A60;
+    --amber: #D98A2B;
+    --amber-dark: #B8721C;
+    --amber-light: #F6E3C8;
+    --pine: #2F4A3C;
+    --pine-light: #E4EBE6;
+    --line: rgba(43,43,46,.10);
+    --shadow: 0 18px 40px -18px rgba(43,43,46,.18);
+    --shadow-soft: 0 8px 24px -12px rgba(43,43,46,.14);
+    --radius: 20px;
+    --radius-sm: 14px;
+    --max: 1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Manrope',system-ui,-apple-system,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.font-head{font-family:'Unbounded',sans-serif;line-height:1.15;letter-spacing:-.02em}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none}
+  .container{max-width:var(--max);margin:0 auto;padding:0 24px}
+  .section{padding:96px 0}
+  .section-tight{padding:64px 0}
+
+  /* Focus visibility */
+  a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible, label:focus-visible{
+    outline:3px solid var(--amber);
+    outline-offset:3px;
+    border-radius:6px;
+  }
+
+  /* Reveal animation */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.visible{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    *{transition-duration:.001ms !important;animation-duration:.001ms !important}
+  }
+
+  .eyebrow{
+    display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--amber-dark);margin-bottom:18px;
+  }
+  .h2{font-size:clamp(28px,4vw,44px);font-weight:600;margin-bottom:16px}
+  .lead{font-size:clamp(17px,2vw,19px);color:var(--ink-soft);max-width:640px}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    background:var(--amber);color:#fff;font-weight:700;font-size:16px;
+    padding:16px 32px;border-radius:999px;
+    transition:background .25s ease,transform .2s ease,box-shadow .25s ease;
+    box-shadow:0 10px 26px -12px rgba(217,138,43,.7);
+    text-align:center;
+  }
+  .btn:hover{background:var(--amber-dark);transform:translateY(-2px)}
+  .btn:active{transform:translateY(0)}
+  .btn-ghost{
+    background:transparent;color:var(--pine);box-shadow:none;
+    border:1.5px solid var(--pine);padding:14px 28px;
+  }
+  .btn-ghost:hover{background:var(--pine);color:#fff}
+  .btn-lg{padding:19px 40px;font-size:17px}
+
+  /* Header */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,247,242,.86);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:10px;font-family:'Unbounded',sans-serif;font-weight:600;font-size:20px;letter-spacing:-.02em}
+  .logo-mark{
+    width:34px;height:34px;border-radius:10px;
+    background:linear-gradient(140deg,var(--pine),var(--amber));
+    display:grid;place-items:center;color:#fff;font-size:16px;font-weight:700;
+  }
+  .nav-links{display:flex;gap:32px;font-size:15px;font-weight:600;color:var(--ink-soft)}
+  .nav-links a:hover{color:var(--amber-dark)}
+  .nav-cta{display:flex;align-items:center;gap:20px}
+  .nav-phone{font-weight:700;font-size:15px;white-space:nowrap}
+  .nav .btn{padding:12px 24px;font-size:15px}
+  @media(max-width:920px){
+    .nav-links{display:none}
+    .nav-phone{display:none}
+  }
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;padding:80px 0 90px}
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(700px 420px at 88% -8%, rgba(217,138,43,.14), transparent 70%),
+      radial-gradient(600px 400px at -10% 110%, rgba(47,74,60,.10), transparent 70%);
+    pointer-events:none;
+  }
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+  .hero h1{font-size:clamp(30px,4.4vw,54px);font-weight:600;margin-bottom:16px}
+  .hero h1 em{font-style:normal;color:var(--amber-dark)}
+  .hero-sub{font-size:clamp(17px,2vw,21px);font-weight:600;color:var(--pine);margin-bottom:20px}
+  .hero .lead{margin-bottom:32px;font-size:clamp(16px,1.9vw,19px)}
+  .hero-facts{display:flex;flex-wrap:wrap;gap:14px 28px;margin-bottom:32px;font-weight:600;font-size:15px;color:var(--pine)}
+  .hero-facts span{display:flex;align-items:center;gap:8px}
+  .hero-facts svg{flex:none}
+  .hero-price{
+    display:inline-flex;flex-wrap:wrap;gap:8px 22px;align-items:baseline;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+    padding:16px 24px;margin-bottom:30px;box-shadow:var(--shadow-soft);
+    font-size:15px;color:var(--ink-soft);
+  }
+  .hero-price b{font-family:'Unbounded',sans-serif;font-size:22px;color:var(--ink);font-weight:600}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+  .hero-note{font-size:14px;color:var(--ink-soft)}
+
+  .hero-visual{position:relative}
+  .hero-photo{
+    border-radius:26px;box-shadow:var(--shadow);
+    aspect-ratio:4/4.4;position:relative;
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;border-radius:26px;display:block}
+  .hero-badge{
+    position:absolute;left:-18px;bottom:28px;
+    background:var(--card);border-radius:16px;padding:16px 22px;
+    box-shadow:var(--shadow);display:flex;align-items:center;gap:14px;
+  }
+  .hero-badge .num{font-family:'Unbounded',sans-serif;font-size:28px;font-weight:600;color:var(--amber-dark);line-height:1}
+  .hero-badge .cap{font-size:13px;color:var(--ink-soft);line-height:1.35}
+  @media(max-width:920px){
+    .hero{padding:48px 0 64px}
+    .hero-grid{grid-template-columns:1fr;gap:40px}
+    .hero-photo{aspect-ratio:16/11}
+    .hero-badge{left:12px;bottom:12px}
+  }
+
+  /* Numbers strip */
+  .numbers{background:var(--pine);color:#fff;border-radius:26px;padding:44px 40px;box-shadow:var(--shadow)}
+  .numbers-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;text-align:center}
+  .numbers-grid .num{font-family:'Unbounded',sans-serif;font-size:clamp(26px,3.2vw,38px);font-weight:600;color:#F3C98B;line-height:1.1}
+  .numbers-grid .cap{font-size:14px;opacity:.85;margin-top:6px;line-height:1.4}
+  @media(max-width:800px){
+    .numbers{padding:32px 24px}
+    .numbers-grid{grid-template-columns:repeat(2,1fr);gap:24px 16px}
+    .numbers-grid > div:last-child{grid-column:1/-1}
+  }
+
+  /* Fears */
+  .fears-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .fear-card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:34px 30px;box-shadow:var(--shadow-soft);
+    transition:transform .3s ease,box-shadow .3s ease;
+    display:flex;flex-direction:column;gap:14px;
+  }
+  .fear-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .fear-q{font-family:'Unbounded',sans-serif;font-size:18px;font-weight:600;color:var(--ink)}
+  .fear-q .quoted{color:var(--amber-dark)}
+  .fear-arrow{color:var(--amber);font-size:20px;line-height:1}
+  .fear-a{color:var(--ink-soft);font-size:16px}
+  @media(max-width:860px){.fears-grid{grid-template-columns:1fr}}
+
+  /* Steps */
+  .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .step{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px 28px;position:relative;box-shadow:var(--shadow-soft);
+  }
+  .step-num{
+    width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+    background:var(--pine-light);color:var(--pine);
+    font-family:'Unbounded',sans-serif;font-weight:600;font-size:17px;margin-bottom:20px;
+  }
+  .step h3{font-size:18px;font-weight:600;margin-bottom:10px}
+  .step p{font-size:15px;color:var(--ink-soft)}
+  @media(max-width:860px){.steps-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.steps-grid{grid-template-columns:1fr}}
+
+  /* Projects */
+  .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:48px}
+  .project{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;box-shadow:var(--shadow-soft);cursor:pointer;
+    transition:transform .3s ease,box-shadow .3s ease;
+    display:flex;flex-direction:column;text-align:left;width:100%;
+    padding:0;color:inherit;
+  }
+  .project:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .project-img{aspect-ratio:4/3;overflow:hidden;background:var(--bg-soft)}
+  .project-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .project:hover .project-img img{transform:scale(1.05)}
+  .project-body{padding:24px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .project-name{font-family:'Unbounded',sans-serif;font-size:18px;font-weight:600}
+  .project-meta{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:var(--ink-soft)}
+  .project-price{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);font-weight:700;color:var(--pine);display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .project-price .go{color:var(--amber-dark);font-size:14px;font-weight:700}
+  .project-note{font-size:13px;color:var(--ink-soft);margin-top:2px}
+  @media(max-width:860px){.projects-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.projects-grid{grid-template-columns:1fr}}
+
+  /* Calculator */
+  .calc-wrap{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:32px;margin-top:52px;align-items:stretch;
+  }
+  .calc-card,.calc-result{
+    background:var(--card);border:1px solid var(--line);border-radius:26px;
+    padding:38px 36px;box-shadow:var(--shadow-soft);
+  }
+  .calc-field{margin-bottom:28px}
+  .calc-label{display:flex;justify-content:space-between;align-items:baseline;font-weight:600;font-size:15px;margin-bottom:12px;gap:12px}
+  .calc-label output{font-family:'Unbounded',sans-serif;font-weight:600;font-size:19px;color:var(--amber-dark);white-space:nowrap}
+  input[type=range]{
+    -webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:99px;
+    background:linear-gradient(90deg,var(--amber) var(--fill,50%),var(--bg-soft) var(--fill,50%));
+    outline:none;cursor:pointer;
+  }
+  input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;appearance:none;width:26px;height:26px;border-radius:50%;
+    background:#fff;border:3px solid var(--amber);box-shadow:0 3px 10px rgba(43,43,46,.2);cursor:grab;
+  }
+  input[type=range]::-moz-range-thumb{
+    width:22px;height:22px;border-radius:50%;background:#fff;border:3px solid var(--amber);
+    box-shadow:0 3px 10px rgba(43,43,46,.2);cursor:grab;
+  }
+  .seg{display:flex;flex-wrap:wrap;gap:10px}
+  .seg button{
+    flex:1;min-width:100px;padding:13px 14px;border-radius:12px;font-weight:600;font-size:15px;
+    border:1.5px solid var(--line);background:var(--bg);color:var(--ink-soft);
+    transition:all .2s ease;
+  }
+  .seg button:hover{border-color:var(--amber)}
+  .seg button.active{background:var(--pine);border-color:var(--pine);color:#fff}
+  .check-row{display:flex;flex-direction:column;gap:12px}
+  .check{
+    display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:12px;
+    border:1.5px solid var(--line);background:var(--bg);cursor:pointer;font-weight:600;font-size:15px;
+    transition:all .2s ease;user-select:none;
+  }
+  .check:hover{border-color:var(--amber)}
+  .check input{position:absolute;opacity:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .check .box{
+    width:22px;height:22px;border-radius:7px;border:2px solid #C9BFB0;flex:none;
+    display:grid;place-items:center;transition:all .2s ease;background:#fff;
+  }
+  .check .box svg{opacity:0;transform:scale(.5);transition:all .2s ease}
+  .check input:checked + .box{background:var(--amber);border-color:var(--amber)}
+  .check input:checked + .box svg{opacity:1;transform:scale(1)}
+  .check:has(input:checked){border-color:var(--amber);background:var(--amber-light)}
+  .check:focus-within{outline:3px solid var(--amber);outline-offset:3px}
+
+  .calc-result{display:flex;flex-direction:column;background:linear-gradient(160deg,#FFFDF9, #FBF4E9);border-color:rgba(217,138,43,.25)}
+  .calc-result .cap{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px}
+  .calc-total{font-family:'Unbounded',sans-serif;font-size:clamp(28px,3.4vw,40px);font-weight:600;color:var(--ink);line-height:1.1;margin-bottom:6px}
+  .calc-total .from{font-size:16px;color:var(--ink-soft);font-family:'Manrope',sans-serif;font-weight:600;display:block;margin-bottom:8px}
+  .calc-total-sub{font-size:15px;color:var(--ink-soft);margin-bottom:22px}
+  .calc-breakdown{list-style:none;font-size:14px;color:var(--ink-soft);margin-bottom:26px;border-top:1px solid rgba(217,138,43,.22);padding-top:18px;display:flex;flex-direction:column;gap:8px}
+  .calc-breakdown li{display:flex;justify-content:space-between;gap:12px}
+  .calc-breakdown b{color:var(--ink);font-weight:600;white-space:nowrap}
+  .calc-disclaimer{font-size:13px;color:var(--ink-soft);margin-bottom:24px;line-height:1.5}
+  .calc-result .btn{margin-top:auto;width:100%}
+  @media(max-width:920px){.calc-wrap{grid-template-columns:1fr}}
+
+  /* Reviews */
+  .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .review{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:32px 30px;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;gap:16px;
+  }
+  .review-stars{color:var(--amber);font-size:15px;letter-spacing:3px}
+  .review-text{font-size:16px;color:var(--ink);flex:1}
+  .review-author{display:flex;align-items:center;gap:14px;padding-top:16px;border-top:1px solid var(--line)}
+  .review-avatar{
+    width:46px;height:46px;border-radius:50%;background:var(--pine-light);color:var(--pine);
+    display:grid;place-items:center;font-family:'Unbounded',sans-serif;font-weight:600;font-size:17px;flex:none;
+  }
+  .review-name{font-weight:700;font-size:15px}
+  .review-detail{font-size:13px;color:var(--ink-soft)}
+  @media(max-width:860px){.reviews-grid{grid-template-columns:1fr}}
+
+  /* Guarantee */
+  .guarantee{background:var(--pine);color:#fff;border-radius:26px;padding:56px 52px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;box-shadow:var(--shadow)}
+  .guarantee h2{color:#fff;font-size:clamp(26px,3.4vw,38px);margin-bottom:16px}
+  .guarantee p{color:rgba(255,255,255,.8);font-size:16px}
+  .guarantee-list{list-style:none;display:flex;flex-direction:column;gap:16px}
+  .guarantee-list li{display:flex;gap:14px;align-items:flex-start;font-size:16px}
+  .guarantee-list svg{flex:none;margin-top:3px;color:#F3C98B}
+  @media(max-width:860px){.guarantee{grid-template-columns:1fr;padding:40px 28px;gap:32px}}
+
+  /* FAQ */
+  .faq-list{margin-top:44px;display:flex;flex-direction:column;gap:14px;max-width:860px}
+  .faq-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;transition:box-shadow .3s ease}
+  .faq-item[open]{box-shadow:var(--shadow-soft)}
+  .faq-item summary{
+    list-style:none;cursor:pointer;padding:22px 26px;font-weight:700;font-size:17px;
+    display:flex;justify-content:space-between;align-items:center;gap:20px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-icon{
+    width:30px;height:30px;border-radius:50%;background:var(--amber-light);color:var(--amber-dark);
+    display:grid;place-items:center;flex:none;transition:transform .3s ease;font-size:20px;line-height:1;font-weight:400;
+  }
+  .faq-item[open] .faq-icon{transform:rotate(45deg);background:var(--amber);color:#fff}
+  .faq-body{padding:0 26px 24px;color:var(--ink-soft);font-size:16px}
+
+  /* Final CTA / Form */
+  .final{position:relative;overflow:hidden;padding:100px 0}
+  .final::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(700px 400px at 15% 20%, rgba(217,138,43,.12), transparent 70%),
+               radial-gradient(600px 420px at 90% 90%, rgba(47,74,60,.10), transparent 70%);
+  }
+  .final-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .final h2{font-size:clamp(28px,4vw,46px);margin-bottom:18px}
+  .final .lead{margin-bottom:28px}
+  .final-contacts{display:flex;flex-direction:column;gap:14px;font-weight:600}
+  .final-contacts a{display:flex;align-items:center;gap:12px;color:var(--ink)}
+  .final-contacts a:hover{color:var(--amber-dark)}
+  .final-contacts svg{color:var(--amber-dark);flex:none}
+  .form-card{
+    background:var(--card);border-radius:26px;padding:44px 40px;box-shadow:var(--shadow);
+    border:1px solid var(--line);scroll-margin-top:100px;
+  }
+  .form-card h3{font-size:22px;font-weight:600;margin-bottom:8px}
+  .form-card .sub{color:var(--ink-soft);font-size:15px;margin-bottom:28px}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-size:14px;font-weight:600;margin-bottom:8px;color:var(--ink-soft)}
+  .field input{
+    width:100%;padding:15px 18px;border-radius:12px;border:1.5px solid var(--line);
+    font-family:inherit;font-size:16px;color:var(--ink);background:var(--bg);outline:none;
+    transition:border-color .2s ease,background .2s ease;
+  }
+  .field input:focus{border-color:var(--amber);background:#fff}
+  .field input::placeholder{color:#A9A29A}
+  .field input.invalid{border-color:#B33A2B;background:#FDF3F1}
+  .agree{display:flex;gap:12px;align-items:flex-start;font-size:13px;color:var(--ink-soft);margin:22px 0 24px;line-height:1.5;cursor:pointer}
+  .agree input{width:20px;height:20px;flex:none;accent-color:var(--amber);margin-top:2px;cursor:pointer}
+  .agree a{color:var(--amber-dark);text-decoration:underline;text-underline-offset:2px}
+  .form-card .btn{width:100%}
+  .form-micro{font-size:13px;color:var(--ink-soft);text-align:center;margin-top:16px;display:flex;align-items:center;justify-content:center;gap:8px}
+  .form-micro svg{color:var(--pine);flex:none}
+  .form-success{
+    display:none;text-align:center;padding:30px 10px;
+  }
+  .form-success.show{display:block;animation:pop .45s ease}
+  @keyframes pop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+  .form-success .check-big{
+    width:72px;height:72px;border-radius:50%;background:var(--pine-light);color:var(--pine);
+    display:grid;place-items:center;margin:0 auto 22px;
+  }
+  .form-success h3{margin-bottom:10px}
+  .form-success p{color:var(--ink-soft);font-size:15px}
+  .error-msg{color:#B33A2B;font-size:13px;margin-top:8px;display:none}
+  .error-msg.show{display:block}
+  @media(max-width:920px){
+    .final{padding:64px 0}
+    .final-grid{grid-template-columns:1fr;gap:44px}
+    .form-card{padding:32px 26px}
+  }
+
+  /* Footer */
+  footer.site{background:#26262A;color:rgba(255,255,255,.72);padding:56px 0 36px;font-size:14px}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  footer.site .logo{color:#fff;margin-bottom:16px}
+  footer.site p{max-width:320px;line-height:1.6}
+  footer.site h4{color:#fff;font-size:15px;font-weight:700;margin-bottom:16px;font-family:'Manrope',sans-serif}
+  footer.site ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+  footer.site a:hover{color:#F3C98B}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;color:rgba(255,255,255,.5)}
+  @media(max-width:800px){.footer-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.footer-grid{grid-template-columns:1fr}}
+
+  /* Sticky mobile CTA */
+  .sticky-cta{
+    display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+    background:rgba(250,247,242,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border-top:1px solid var(--line);
+  }
+  .sticky-cta .btn{width:100%}
+  @media(max-width:720px){
+    .sticky-cta{display:block}
+    body{padding-bottom:78px}
+  }
+</style>
+</head>
+<body><div style="background:#2F4A3A;color:#fff;text-align:center;font:500 13px/1.4 Manrope,system-ui,sans-serif;padding:8px 16px">Учебный пример из урока ИИ-школы · компания вымышленная</div>
+
+<!-- ================= HEADER ================= -->
+<header class="site">
+  <div class="container nav">
+    <a href="#top" class="logo" aria-label="СеверДом — на главную"><span class="logo-mark">С</span>СеверДом</a>
+    <nav class="nav-links" aria-label="Основная навигация">
+      <a href="#fears">Почему мы</a>
+      <a href="#steps">Как строим</a>
+      <a href="#projects">Проекты</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+79000000000" class="nav-phone">+7 (900) 000-00-00</a>
+      <a href="#calc" class="btn">Рассчитать стоимость</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Каркасные дома под ключ · Подмосковье</span>
+      <h1>Тёплый каркасный дом за <em>90 дней</em></h1>
+      <p class="hero-sub">С фиксированной ценой в договоре</p>
+      <p class="lead">Строим дома, в которых зимуют без страха и переплат. Цена фиксируется в договоре и не растёт в процессе — вы знаете итоговую сумму до начала стройки.</p>
+      <div class="hero-facts">
+        <span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          9 лет на рынке
+        </span>
+        <span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          240 домов
+        </span>
+        <span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          Гарантия 15 лет на каркас
+        </span>
+      </div>
+      <div class="hero-price">
+        <span>Цена от <b>32 000 ₽/м²</b></span>
+        <span>Дом 120 м² под ключ — от <b>3,84 млн ₽</b></span>
+      </div>
+      <div class="hero-actions">
+        <a href="#calc" class="btn btn-lg">Рассчитать стоимость</a>
+        <span class="hero-note">Бесплатно · без обязательств</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-photo">
+        <img src="hero.jpg" alt="Готовый каркасный дом СеверДом 140 м², сдан за 90 дней" width="800" height="880" loading="eager">
+        <div class="hero-badge">
+          <div>
+            <div class="num">140 м²</div>
+            <div class="cap">Сдан в октябре<br>· за 90 дней ·</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NUMBERS ================= -->
+<section class="section-tight">
+  <div class="container">
+    <div class="numbers reveal">
+      <div class="numbers-grid">
+        <div><div class="num">9</div><div class="cap">лет на рынке</div></div>
+        <div><div class="num">240</div><div class="cap">домов построено</div></div>
+        <div><div class="num">90</div><div class="cap">дней на стройку</div></div>
+        <div><div class="num">15</div><div class="cap">лет гарантии на каркас</div></div>
+        <div><div class="num">32 000</div><div class="cap">₽/м² — от</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEARS ================= -->
+<section class="section" id="fears">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Честно о главном</span>
+      <h2 class="h2">Три страха, с которыми приходят почти все</h2>
+      <p class="lead">Мы понимаем, почему вы сомневаетесь. Вот что за этим стоит на самом деле.</p>
+    </div>
+    <div class="fears-grid">
+      <div class="fear-card reveal">
+        <div class="fear-q"><span class="quoted">«Каркасный дом будет холодным»</span></div>
+        <div class="fear-arrow" aria-hidden="true">↓</div>
+        <div class="fear-a">Утепляем по технологии, рассчитанной на подмосковные зимы, — в домах тепло и зимой, и в межсезонье. Наши клиенты живут круглый год и делятся отзывами.</div>
+      </div>
+      <div class="fear-card reveal">
+        <div class="fear-q"><span class="quoted">«Каркас — это ненадолго»</span></div>
+        <div class="fear-arrow" aria-hidden="true">↓</div>
+        <div class="fear-a">Даём гарантию 15 лет на каркас. Технология проверена 240 домами за 9 лет — без «сюрпризов» через пару лет.</div>
+      </div>
+      <div class="fear-card reveal">
+        <div class="fear-q"><span class="quoted">«Цена вырастет в процессе»</span></div>
+        <div class="fear-arrow" aria-hidden="true">↓</div>
+        <div class="fear-a">Итоговая цена фиксируется в договоре до начала работ. Никаких «внезапных» доплат — сумма, которую вы видели, и есть сумма к оплате.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STEPS ================= -->
+<section class="section" id="steps" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Как мы строим</span>
+      <h2 class="h2">От заявки до ключей — 90 дней</h2>
+      <p class="lead">Прозрачный процесс, где цена и срок зафиксированы на этапе договора.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step reveal"><div class="step-num">01</div><h3>Заявка и расчёт</h3><p>Оставляете заявку — мы перезваниваем, отвечаем на вопросы и считаем предварительную стоимость.</p></div>
+      <div class="step reveal"><div class="step-num">02</div><h3>Смета и договор</h3><p>Готовим точную смету. Фиксируем цену и срок 90 дней в договоре.</p></div>
+      <div class="step reveal"><div class="step-num">03</div><h3>Проект и фундамент</h3><p>Согласуем проект, заливаем фундамент и начинаем сборку каркаса.</p></div>
+      <div class="step reveal"><div class="step-num">04</div><h3>Каркас и утепление</h3><p>Собираем каркас, утепляем под зиму Подмосковья, ставим кровлю и окна.</p></div>
+      <div class="step reveal"><div class="step-num">05</div><h3>Отделка и коммуникации</h3><p>Внутренняя и внешняя отделка, электрика, сантехника — всё «под ключ».</p></div>
+      <div class="step reveal"><div class="step-num">06</div><h3>Ключи и гарантия</h3><p>Передаём дом, подписываем акт и выдаём гарантию 15 лет на каркас.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Проекты</span>
+      <h2 class="h2">Дома, которые уже стоят</h2>
+      <p class="lead">Выберите проект — мы рассчитаем его под ваш участок и бюджет.</p>
+    </div>
+    <div class="projects-grid">
+      <button class="project reveal" data-project="Скандинавия 120" data-area="120" data-price="3840000" aria-label="Проект Скандинавия 120, 120 квадратных метров, от 3,84 миллиона рублей — рассчитать">
+        <div class="project-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Каркасный дом «Скандинавия 120» с террасой" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-name">Скандинавия 120</div>
+          <div class="project-meta"><span>120 м²</span><span>1,5 этажа</span><span>90 дней</span></div>
+          <div class="project-note">Под ключ</div>
+          <div class="project-price"><span>от 3,84 млн ₽</span><span class="go">Рассчитать →</span></div>
+        </div>
+      </button>
+      <button class="project reveal" data-project="Хвойный 96" data-area="96" data-price="3072000" aria-label="Проект Хвойный 96, 96 квадратных метров, от 3,07 миллиона рублей — рассчитать">
+        <div class="project-img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Каркасный дом «Хвойный 96» в один этаж" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-name">Хвойный 96</div>
+          <div class="project-meta"><span>96 м²</span><span>1 этаж</span><span>90 дней</span></div>
+          <div class="project-note">Под ключ</div>
+          <div class="project-price"><span>от 3,07 млн ₽</span><span class="go">Рассчитать →</span></div>
+        </div>
+      </button>
+      <button class="project reveal" data-project="Янтарь 150" data-area="150" data-price="4800000" aria-label="Проект Янтарь 150, 150 квадратных метров, от 4,8 миллиона рублей — рассчитать">
+        <div class="project-img"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Каркасный дом «Янтарь 150» в два этажа" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-name">Янтарь 150</div>
+          <div class="project-meta"><span>150 м²</span><span>2 этажа</span><span>90 дней</span></div>
+          <div class="project-note">Под ключ</div>
+          <div class="project-price"><span>от 4,8 млн ₽</span><span class="go">Рассчитать →</span></div>
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CALCULATOR ================= -->
+<section class="section" id="calc" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Калькулятор</span>
+      <h2 class="h2">Узнайте стоимость вашего дома</h2>
+      <p class="lead">Настройте параметры — увидите ориентировочную цену за пару секунд.</p>
+    </div>
+
+    <div class="calc-wrap">
+      <div class="calc-card reveal">
+        <div class="calc-field">
+          <div class="calc-label"><span>Площадь дома</span><output id="areaOut" for="area">120 м²</output></div>
+          <input type="range" id="area" min="60" max="250" step="5" value="120" aria-label="Площадь дома, квадратных метров" aria-valuetext="120 квадратных метров">
+        </div>
+
+        <div class="calc-field">
+          <div class="calc-label"><span>Этажность</span></div>
+          <div class="seg" id="floors" role="group" aria-label="Этажность">
+            <button type="button" class="active" data-floors="1" aria-pressed="true">1 этаж</button>
+            <button type="button" data-floors="1.5" aria-pressed="false">1,5 этажа</button>
+            <button type="button" data-floors="2" aria-pressed="false">2 этажа</button>
+          </div>
+        </div>
+
+        <div class="calc-field">
+          <div class="calc-label"><span>Комплектация</span></div>
+          <div class="seg" id="package" role="group" aria-label="Комплектация">
+            <button type="button" data-rate="32000" aria-pressed="false">Каркас</button>
+            <button type="button" data-rate="39000" aria-pressed="false">Тёплый контур</button>
+            <button type="button" class="active" data-rate="32000" aria-pressed="true">Под ключ</button>
+          </div>
+        </div>
+
+        <div class="calc-field" style="margin-bottom:0">
+          <div class="calc-label"><span>Дополнительно</span></div>
+          <div class="check-row">
+            <label class="check">
+              <input type="checkbox" id="terrace" data-price="350000">
+              <span class="box" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+              <span>Терраса · +350 000 ₽</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" id="bath2" data-price="220000">
+              <span class="box" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+              <span>Второй санузел · +220 000 ₽</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-result reveal">
+        <div class="cap">Ориентировочная стоимость</div>
+        <div class="calc-total"><span class="from">от</span><span id="totalOut">3 840 000 ₽</span></div>
+        <div class="calc-total-sub" id="totalSub">120 м² · под ключ · 1 этаж</div>
+        <ul class="calc-breakdown" id="breakdown">
+          <li><span>Площадь × ставка</span><b id="bdBase">3 840 000 ₽</b></li>
+        </ul>
+        <p class="calc-disclaimer">Это предварительный расчёт. Точная стоимость определяется после сметы и фиксируется в договоре — и не меняется в процессе стройки.</p>
+        <a href="#form" class="btn btn-lg" id="calcCta">Получить точный расчёт</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Отзывы</span>
+      <h2 class="h2">Как в этих домах живут</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review reveal">
+        <div class="review-stars" aria-label="5 из 5 звёзд">★★★★★</div>
+        <p class="review-text">«Переехали с семьёй за город и не пожалели. Первую зиму прожили — дома тепло, отопление обходится заметно дешевле, чем мы ожидали. Стройка уложилась в срок.»</p>
+        <div class="review-author"><div class="review-avatar" aria-hidden="true">А</div><div><div class="review-name">Анна и Дмитрий</div><div class="review-detail">Скандинавия 120 · живут 2 года</div></div></div>
+      </div>
+      <div class="review reveal">
+        <div class="review-stars" aria-label="5 из 5 звёзд">★★★★★</div>
+        <p class="review-text">«Главное, за что брали, — фиксированная цена. В договоре была одна сумма, по факту заплатили ровно её. Никаких „доплат по ходу“ не было.»</p>
+        <div class="review-author"><div class="review-avatar" aria-hidden="true">С</div><div><div class="review-name">Сергей</div><div class="review-detail">Хвойный 96 · живёт 1 год</div></div></div>
+      </div>
+      <div class="review reveal">
+        <div class="review-stars" aria-label="5 из 5 звёзд">★★★★★</div>
+        <p class="review-text">«Сомневались, что каркас — это надолго. Через два года дом как новый, ни одной проблемы. Гарантия 15 лет на каркас добавила уверенности.»</p>
+        <div class="review-author"><div class="review-avatar" aria-hidden="true">М</div><div><div class="review-name">Марина</div><div class="review-detail">Янтарь 150 · живёт 2 года</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GUARANTEE ================= -->
+<section class="section-tight">
+  <div class="container">
+    <div class="guarantee reveal">
+      <div>
+        <h2>Что зафиксировано в договоре</h2>
+        <p>Мы убираем поводы для беспокойства ещё до начала стройки — всё важное прописано на бумаге.</p>
+      </div>
+      <ul class="guarantee-list">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Фиксированная цена</b> — итоговая сумма не меняется в процессе строительства</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Срок 90 дней</b> — прописан в договоре</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><b>Гарантия 15 лет</b> на каркас</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Вопросы и ответы</span>
+      <h2 class="h2">Отвечаем на частые вопросы</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>Не будет ли в каркасном доме холодно зимой?<span class="faq-icon" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Нет. Утепление рассчитывается под климат Подмосковья, поэтому зимой в доме тепло, а отопление обходится экономно. Наши клиенты живут круглый год — почитайте их отзывы выше.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Сколько стоит отопление такого дома?<span class="faq-icon" aria-hidden="true">+</span></summary>
+        <div class="faq-body">По опыту наших домов 120–150 м² в Подмосковье зимой отопление обходится примерно в 4 000–7 000 ₽ в месяц в зависимости от системы и тарифа. Точную цифру для вашего проекта посчитаем на расчёте — она зависит от площади и выбранного котла.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Можно ли строить зимой?<span class="faq-icon" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Да, каркасная технология позволяет строить в холодное время года. Точные сроки старта зависят от готовности участка и фундамента — обсудим на этапе сметы.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Что входит в «под ключ»?<span class="faq-icon" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Фундамент, каркас, утепление, кровля, окна, наружная и внутренняя отделка, электрика и сантехника. Точный перечень фиксируется в смете и договоре — без «размытых» формулировок.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Как формируется цена и может ли она вырасти?<span class="faq-icon" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Цена складывается из площади, этажности, комплектации и доп. опций. После согласования сметы итоговая сумма фиксируется в договоре и не меняется в процессе строительства.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Какие этапы оплаты?<span class="faq-icon" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Стандартная схема — аванс на закупку материалов, оплата по факту сборки каркаса и утепления, оплата отделки и финальный платёж после приёмки дома. Точные проценты и этапы прописываем в договоре до начала работ.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Работаете ли вы по всей Московской области?<span class="faq-icon" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Да, строим по всей Московской области. Для участков дальше 100 км от МКАД возможна небольшая надбавка на логистику — она озвучивается заранее и тоже фиксируется в договоре.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA + FORM ================= -->
+<section class="final" id="form">
+  <div class="container final-grid">
+    <div class="reveal">
+      <span class="eyebrow">Расчёт стоимости</span>
+      <h2>Узнайте точную стоимость вашего дома</h2>
+      <p class="lead">Оставьте заявку — перезвоним, ответим на вопросы и подготовим расчёт с фиксированной ценой. Без спама и навязчивых звонков.</p>
+      <div class="final-contacts">
+        <a href="tel:+79000000000">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +7 (900) 000-00-00
+        </a>
+        <a href="mailto:info@example.com">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@example.com
+        </a>
+        <a href="#">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Московская область
+        </a>
+      </div>
+    </div>
+
+    <div class="form-card reveal" id="formCard">
+      <form id="leadForm" novalidate>
+        <h3>Получить расчёт стоимости</h3>
+        <p class="sub">Заполните — перезвоним и всё расскажем.</p>
+        <div class="field">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
+          <div class="error-msg" id="nameError">Пожалуйста, укажите имя</div>
+        </div>
+        <div class="field">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required>
+          <div class="error-msg" id="phoneError">Пожалуйста, укажите корректный номер телефона</div>
+        </div>
+        <div class="field">
+          <label for="comment">Площадь или бюджет <span style="font-weight:400;color:#A9A29A">(необязательно)</span></label>
+          <input type="text" id="comment" name="comment" placeholder="Например: 120 м², до 4 млн ₽">
+        </div>
+        <label class="agree">
+          <input type="checkbox" id="agree" required>
+          <span>Соглашаюсь с <a href="#">политикой конфиденциальности</a> и обработкой персональных данных</span>
+        </label>
+        <div class="error-msg" id="agreeError" style="margin-top:-12px;margin-bottom:16px">Отметьте согласие на обработку данных, чтобы продолжить</div>
+        <button type="submit" class="btn btn-lg">Получить расчёт</button>
+        <p class="form-micro">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Перезвоним в течение часа. Без спама.
+        </p>
+      </form>
+      <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+        <div class="check-big">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h3>Спасибо!</h3>
+        <p>Мы перезвоним в течение часа, ответим на вопросы и подготовим расчёт с фиксированной ценой.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="logo" aria-label="СеверДом — на главную"><span class="logo-mark">С</span>СеверДом</a>
+        <p>Каркасные дома под ключ в Подмосковье. Фиксированная цена в договоре, срок 90 дней, гарантия 15 лет на каркас.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#fears">Почему мы</a></li>
+          <li><a href="#steps">Как строим</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#calc">Калькулятор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li>Московская область</li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© СеверДом, <span id="year">2025</span>. Все права защищены.</span>
+      <span>ИНН 0000000000 · ООО «СеверДом»</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta">
+  <a href="#calc" class="btn">Рассчитать стоимость</a>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- Auto year ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- Reveal on scroll ---------- */
+  var reveals = document.querySelectorAll('.reveal');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduceMotion){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    },{threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(function(el){io.observe(el);});
+  } else {
+    reveals.forEach(function(el){el.classList.add('visible');});
+  }
+
+  /* ---------- Calculator ---------- */
+  var areaInput = document.getElementById('area');
+  var areaOut   = document.getElementById('areaOut');
+  var totalOut  = document.getElementById('totalOut');
+  var totalSub  = document.getElementById('totalSub');
+  var bdBase    = document.getElementById('bdBase');
+  var breakdown = document.getElementById('breakdown');
+
+  // Ставки: каркас 32 000, тёплый контур 39 000, под ключ 32 000 (базовая комплектация «под ключ» = 32 000)
+  // Для соответствия «от 32 000 ₽/м²» и «120 м² под ключ — от 3,84 млн ₽»
+  var FLOOR_MULT = { '1': 1, '1.5': 1.05, '2': 1.10 };
+  var state = { area:120, floors:1, rate:32000 };
+
+  var floorsBtns  = document.querySelectorAll('#floors button');
+  var packageBtns = document.querySelectorAll('#package button');
+  var terrace = document.getElementById('terrace');
+  var bath2   = document.getElementById('bath2');
+
+  var fmt = function(n){
+    return Math.round(n).toLocaleString('ru-RU').replace(/,/g,' ') + ' ₽';
+  };
+
+  function updateRangeFill(){
+    var min = +areaInput.min, max = +areaInput.max, val = +areaInput.value;
+    var pct = ((val-min)/(max-min))*100;
+    areaInput.style.setProperty('--fill', pct + '%');
+  }
+
+  function packageName(){
+    if(state.rate === 32000) return 'под ключ';
+    if(state.rate === 39000) return 'тёплый контур';
+    return 'каркас';
+  }
+
+  function floorsName(){
+    if(state.floors === 1) return '1 этаж';
+    if(state.floors === 1.5) return '1,5 этажа';
+    return '2 этажа';
+  }
+
+  function recalc(){
+    var mult = FLOOR_MULT[String(state.floors)] || 1;
+    var base = state.area * state.rate * mult;
+    var extras = [];
+    var extrasSum = 0;
+
+    // Берём суммы из data-price, чтобы не дублировать
+    document.querySelectorAll('.check input[data-price]').forEach(function(cb){
+      if(cb.checked){
+        var val = +cb.dataset.price;
+        var label = cb.closest('.check').querySelector('span:last-child').textContent.split('·')[0].trim();
+        extras.push({name: label, val: val});
+        extrasSum += val;
+      }
+    });
+
+    var total = base + extrasSum;
+
+    areaOut.textContent = state.area + ' м²';
+    areaInput.setAttribute('aria-valuetext', state.area + ' квадратных метров');
+    totalOut.textContent = fmt(total);
+    totalSub.textContent = state.area + ' м² · ' + packageName() + ' · ' + floorsName().toLowerCase();
+
+    var baseLabel = state.area + ' м² × ' + state.rate.toLocaleString('ru-RU').replace(/,/g,' ') + ' ₽';
+    if(mult !== 1){
+      baseLabel += ' × ' + mult.toString().replace('.', ',');
+    }
+    var html = '<li><span>' + baseLabel + '</span><b>' + fmt(base) + '</b></li>';
+    extras.forEach(function(x){
+      html += '<li><span>' + x.name + '</span><b>+' + fmt(x.val) + '</b></li>';
+    });
+    if(extras.length){
+      html += '<li style="border-top:1px solid rgba(217,138,43,.22);padding-top:10px;margin-top:2px"><span><b>Итого</b></span><b>' + fmt(total) + '</b></li>';
+    }
+    breakdown.innerHTML = html;
+
+    updateRangeFill();
+  }
+
+  areaInput.addEventListener('input', function(){
+    state.area = +areaInput.value;
+    recalc();
+  });
+
+  floorsBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      floorsBtns.forEach(function(b){b.classList.remove('active'); b.setAttribute('aria-pressed','false');});
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed','true');
+      state.floors = parseFloat(btn.dataset.floors);
+      recalc();
+    });
+  });
+
+  packageBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      packageBtns.forEach(function(b){b.classList.remove('active'); b.setAttribute('aria-pressed','false');});
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed','true');
+      state.rate = +btn.dataset.rate;
+      recalc();
+    });
+  });
+
+  terrace.addEventListener('change', recalc);
+  bath2.addEventListener('change', recalc);
+
+  recalc();
+
+  /* ---------- Projects -> prefill form ---------- */
+  document.querySelectorAll('.project').forEach(function(card){
+    card.addEventListener('click', function(){
+      var area = card.dataset.area;
+      var name = card.dataset.project;
+      if(area){
+        state.area = Math.min(250, Math.max(60, +area));
+        areaInput.value = state.area;
+        recalc();
+      }
+      var comment = document.getElementById('comment');
+      if(comment && !comment.value){
+        comment.value = 'Интересует проект «' + name + '»' + (area ? ', ' + area + ' м²' : '');
+      }
+      document.getElementById('calc').scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block:'start'});
+    });
+  });
+
+  /* ---------- Calc CTA -> prefill comment + focus form ---------- */
+  document.getElementById('calcCta').addEventListener('click', function(e){
+    var comment = document.getElementById('comment');
+    if(comment && !comment.value){
+      var extras = [];
+      if(terrace.checked) extras.push('терраса');
+      if(bath2.checked) extras.push('второй санузел');
+      comment.value = state.area + ' м², ' + packageName() + ', ' + floorsName().toLowerCase() +
+        (extras.length ? ', ' + extras.join(', ') : '');
+    }
+    // Дадим браузеру отработать якорь, затем сфокусируем поле имени
+    setTimeout(function(){
+      var nameField = document.getElementById('name');
+      if(nameField){
+        nameField.focus({preventScroll:true});
+      }
+    }, reduceMotion ? 50 : 600);
+  });
+
+  /* ---------- Phone mask ---------- */
+  var phoneInput = document.getElementById('phone');
+  phoneInput.addEventListener('input', function(){
+    var digits = phoneInput.value.replace(/\D/g,'');
+    if(digits.startsWith('8')) digits = '7' + digits.slice(1);
+    if(!digits.startsWith('7')) digits = '7' + digits;
+    digits = digits.slice(0,11);
+
+    var out = '+7';
+    if(digits.length > 1) out += ' (' + digits.slice(1,4);
+    if(digits.length >= 5) out += ') ' + digits.slice(4,7);
+    if(digits.length >= 8) out += '-' + digits.slice(7,9);
+    if(digits.length >= 10) out += '-' + digits.slice(9,11);
+    phoneInput.value = out;
+    document.getElementById('phoneError').classList.remove('show');
+    phoneInput.classList.remove('invalid');
+  });
+  phoneInput.addEventListener('focus', function(){
+    if(!phoneInput.value) phoneInput.value = '+7 (';
+  });
+
+  /* ---------- Form submit ---------- */
+  var form = document.getElementById('leadForm');
+  var success = document.getElementById('formSuccess');
+  var nameInput = document.getElementById('name');
+  var nameError = document.getElementById('nameError');
+  var phoneError = document.getElementById('phoneError');
+  var agreeInput = document.getElementById('agree');
+  var agreeError = document.getElementById('agreeError');
+
+  nameInput.addEventListener('input', function(){
+    nameInput.classList.remove('invalid');
+    nameError.classList.remove('show');
+  });
+  agreeInput.addEventListener('change', function(){
+    if(agreeInput.checked) agreeError.classList.remove('show');
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = nameInput.value.trim();
+    var phone = phoneInput.value;
+    var digits = phone.replace(/\D/g,'');
+    var valid = true;
+
+    if(!name || name.length < 2){
+      nameError.classList.add('show');
+      nameInput.classList.add('invalid');
+      nameInput.focus();
+      valid = false;
+    }
+    if(digits.length < 11){
+      phoneError.classList.add('show');
+      phoneInput.classList.add('invalid');
+      if(valid) phoneInput.focus();
+      valid = false;
+    }
+    if(!agreeInput.checked){
+      agreeError.classList.add('show');
+      if(valid) agreeInput.focus();
+      valid = false;
+    }
+    if(!valid) return;
+
+    // Отправка в Telegram будет подключена отдельно.
+    // Пока — показываем сообщение об успехе.
+    var payload = {
+      name: name,
+      phone: phone,
+      comment: document.getElementById('comment').value.trim(),
+      calc: {
+        area: state.area,
+        floors: state.floors,
+        rate: state.rate,
+        terrace: terrace.checked,
+        bath2: bath2.checked
+      },
+      utm: Object.fromEntries(new URLSearchParams(location.search))
+    };
+    console.log('Lead (demo, to be sent to Telegram):', payload);
+
+    form.style.display = 'none';
+    success.classList.add('show');
+    // Прокрутим к сообщению, если карточка выше вьюпорта
+    var card = document.getElementById('formCard');
+    var top = card.getBoundingClientRect().top + window.pageYOffset - 100;
+    if(window.pageYOffset > top || window.innerHeight < card.offsetHeight){
+      window.scrollTo({top: top, behavior: reduceMotion ? 'auto' : 'smooth'});
+    }
+  });
+
+  /* ---------- Smooth anchor offset for sticky header ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var headerH = document.querySelector('header.site').offsetHeight;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - headerH - 12;
+      window.scrollTo({top: top, behavior: reduceMotion ? 'auto' : 'smooth'});
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
